@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,35 +15,58 @@
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
     <style>
-        *{
+        * {
             font-family: "Inter", sans-serif;
             max-width: 1920px;
         }
     </style>
 </head>
+
 <body>
     <header class="">
-        <nav class="flex justify-between items-center px-32 py-6 bg-[#15803D]">
-            <h2 class="text-white">Green Earth</h2>
-            <ul class="flex text-white gap-5">
-                <li><a href="">About</a></li>
-                <li><a href="">Gallery</a></li>
-                <li><a href="">Plant a Tree</a></li>
-            </ul>
-            <button class="btn btn-active rounded-full text-[#15803D] bg-[#FACC15]">Plant a Tree</button>
-        </nav>
+            <div class="navbar bg-base-100 shadow-sm bg-[#15803D]">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu text-[#15803D] menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                            <li><a>About</a></li>
+                            <li><a>Gallery</a></li>
+                            <li><a>Plant a Tree</a></li>
+                        </ul>
+                    </div>
+                    <p class="text-white">Green Earth</p>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 text-white">
+                        <li><a>About</a></li>
+                        <li><a>Gallery</a></li>
+                        <li><a>Plant a Tree</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <button class="btn text-[#15803D] bg-[#FACC15] rounded-full border-none">Plant a Tree</button>
+                </div>
+            </div>
+        
         <section class="flex justify-center items-center bg-[#CFF0DC]">
             <div>
-                <img src="./assets/hero-leaf1.png" alt="">
+                <img src="./assets/hero-leaf1.png" alt="" class="hidden lg:flex">
             </div>
-            <div class="border-3 border-red-500">
-                <h1 class="font-bold text-5xl">Plant a Tree, Grow a Future</h1>
-                <p>Join our mission to plant 1 million trees and make the Earth greener for future
+            <div class=" p-18">
+                <h1 class="mb-3 text-center font-bold text-5xl">Plant a Tree, Grow a Future</h1>
+                <p class="mb-3 text-center">Join our mission to plant 1 million trees and make the Earth greener for future
                 generations.</p>
-                <button class="text-center btn btn-active rounded-full text-[#15803D] bg-[#FACC15]">Get Involved</button>
+                <button class="btn btn-active rounded-full text-[#15803D] bg-[#FACC15] ml-[40%]">Get Involved</button>
             </div>
             <div>
-                <img src="./assets/hero-leaf2.png" alt="">
+                <img src="./assets/hero-leaf2.png" alt="" class="mb-3 hidden lg:flex">
             </div>
         </section>
     </header>
@@ -53,4 +77,5 @@
 
     </footer>
 </body>
+
 </html>
