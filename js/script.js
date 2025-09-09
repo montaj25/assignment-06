@@ -1,3 +1,4 @@
+
 const categoryContainer = document.getElementById("category-container");
 const plantContainer = document.getElementById("plant-container");
 const allPlants = document.getElementById("all-plants");
@@ -29,13 +30,14 @@ const showAllPlants = (plants) => {
                             <p class="ml-50">৳${plant.price}</p>
                         </div>
                         <div class="">
-                            <button class="text-white bg-[#15803D] w-full btn rounded-full">Buy Now</button>
+                            <button id="${plant.id}" class="text-white bg-[#15803D] w-full btn rounded-full">Buy Now</button>
                         </div>
                     </div>
                 </div>
         `
 
     });
+    
 }
 
 loadAllPlants();
@@ -106,7 +108,7 @@ const showPlantByCategory = (plants) => {
                             <p class="ml-50">৳${plant.price}</p>
                         </div>
                         <div class="">
-                            <button class="text-white bg-[#15803D] w-full btn rounded-full">Buy Now</button>
+                            <button id="${plant.id}" class="text-white bg-[#15803D] w-full btn rounded-full">Buy Now</button>
                         </div>
                     </div>
                 </div>
